@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Age Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mental Age Checker</h1>
+            <p>Take this fun quiz to estimate your mental age! Answer the questions honestly for the best results.</p>
+        </header>
+
+        <div id="quiz-container" class="quiz-container">
+            <div id="question-container">
+                <h2 id="question">Question</h2>
+                <div id="options" class="options">
+                    <!-- Options will be dynamically added here -->
+                </div>
+            </div>
+            <div class="navigation">
+                <button id="prev-btn" class="btn">Previous</button>
+                <button id="next-btn" class="btn">Next</button>
+                <button id="submit-btn" class="btn submit-btn" style="display: none;">Submit</button>
+            </div>
+        </div>
+
+        <div id="results-container" class="results-container" style="display: none;">
+            <div class="result-card">
+                <h2>Your Mental Age</h2>
+                <p id="mental-age">Calculating...</p>
+                <p id="description">Description here</p>
+                <button id="restart-btn" class="btn restart-btn">Try Again</button>
+            </div>
+        </div>
+
+        <footer>
+            <p><em>This is just for fun and entertainment, not scientific.</em></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
